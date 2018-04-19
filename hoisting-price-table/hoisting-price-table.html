@@ -1,0 +1,103 @@
+<html>
+<head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+</head>
+<title>Hoisting table</title>
+
+<style>
+
+
+  container { display: flex; flex-direction: column }
+  p{ margin: 0; padding: 0;}
+  .row{ height: 100% }
+  .table{ border: solid 1px rgb(194, 193, 193) }
+  .table tr{ border-top: solid 1px rgb(194, 193, 193) }
+  .table .fa-check{ color:  rgb(49, 168, 49); position:relative; left: 30px; }
+  .table .fa-times{ color:  rgb(185, 9, 9); position:relative; left: 30px;   }
+  .table .na{  left: 30px;  position:relative; left: 30px; } 
+  .table .title{ text-align:center; color: #ffffff; height: 100px; vertical-align: middle;}
+  .table .title p{ display: inline-block; }
+  .table .title.red { background: #be3d16 }
+  .table .title.light-blue { background: #5fb8ec }
+  .table .title.dark-green { background: #3f5f42 }
+  .table button.btn-default.red{  box-sizing: border-box; padding: 6px 10px 6px 10px;  border-radius: 3px; background: #be3d16; color: #ffffff; border-radius: 5px } 
+  .table button.btn-default.light-blue{ box-sizing: border-box; padding: 6px 10px 6px 10px;  background: #5fb8ec; color: #ffffff; border-radius: 5px }
+  .table button.btn-default.dark-green{ box-sizing: border-box; padding: 6px 10px 6px 10px; background: #3f5f42; color: #ffffff; border-radius: 5px }
+
+
+</style>
+
+</head>
+
+<body>
+    <div class="container col-sm-12 col-md-5">
+
+        <div class="row align-items-center">
+            <table class="col-12 table">
+                <thead class="title-wrapper">
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col" class="title red align-items-center">Basic</th>
+                        <th scope="col"  class="title light-blue align-items-center">Medium</th>
+                        <th scope="col"  class="title dark-green align-items-center">Advance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="info">
+                        <th >20 GB Hard Disk Included</td>
+                        <td class="na">N/A</td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr class="info">
+                        <td>120 TB Bandwidth</td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td class="na">N/A</td>
+                        <td><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr class="info">
+                        <td>Chat Support Option</td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-times"></i></td>   
+                    </tr>
+                    <tr class="info">
+                        <td>Dedicated Support Panel</td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-times"></i></td>
+                        <td><i class="fas fa-check"></i></td>   
+                    </tr>
+                    <tr class="info">
+                        <td>Extra Plugin Features</td>
+                        <td><i class="fas fa-times"></i></td>
+                        <td><i class="fas fa-times"></i></td>
+                        <td><i class="fas fa-check"></i></td>   
+                    </tr>
+                    <tr class="info">
+                        <td>E-mail Support</td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-times"></i></td>
+                        <td><i class="fas fa-check"></i></td>   
+                    </tr>
+                    <tr class="info">
+                        <td>Chat Support Option</td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-times"></i></td>   
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button class="btn-default red text-uppercase">Buy plan</button></td>
+                        <td><button class="btn-default light-blue text-uppercase">Buy plan</button></td>
+                        <td><button class="btn-default dark-green text-uppercase">Buy plan</button></td>
+                    </tr>
+                </tbody>
+            </table>    
+        </div>
+     
+    </div>
+
+</body>
+</html>

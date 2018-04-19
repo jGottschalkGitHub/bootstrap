@@ -1,0 +1,125 @@
+<html>
+<head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+</head>
+<title>Login Form</title>
+
+<style>
+
+
+ /*container { display: flex; flex-direction: column }*/
+ p{ margin: 0; padding: 0;}
+ .parent{ height: 100% }
+ .btn.green { background: rgb(49, 168, 49); color: #ffffff;  width: 100%; margin-bottom: 5px; }
+ .btn.white { background-color: #ffffff; width: 100%; border: solid 1px #c7c9cc; }
+ form { background-color: #f1f1f1; padding: 15px; border-radius: 4px; border: solid 1px #c7c9cc }
+ .outer-wrapper{  
+     align-items: center; 
+     border: solid 1px #c7c9cc;
+     box-shadow: 0 0 10px rgba(0,0,0,0.6); -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6); -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6); -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);  
+  }
+  .outer-wrapper .closing-x { position: absolute; top: 9px; right: 20px; color: #c7c9cc }
+  .small-title{ margin-top: 12px; }
+  .small-title p{ margin-bottom: 0; }
+  .separator{ padding: 0; line-height: 0;}
+  label.bold{ font-weight: bold; }
+  .remember-login{
+      /*display:inline-block;  now done by custom-control-inline*/
+      padding: 0;
+      margin: 0;
+  }
+  .remember-login label{ position: relative; top: 2px;}
+  .checkbox .comment{ color: gray; margin: 0; padding: 0; }
+  .register-wrapper .fa-check{color:  rgb(49, 168, 49); position:relative; top: 1px;}
+  .register-wrapper ul.signup-advantages{ list-style-type: none; padding:0; margin-top: 20px; line-height: 36px; margin-bottom:0 } 
+  .register-wrapper ul.signup-advantages .comment{ font-size: 12px; } 
+  .register-wrapper .big-title{ font-size: 20px;  }
+  .register-wrapper .big-title .green{ color:  rgb(49, 168, 49); }
+  .register-wrapper a.read-more{ font-size: 16px; color: rgb(84, 135, 211); text-decoration: underline; }
+  .register-wrapper .button-wrapper{ padding: 0 }
+  .register-wrapper .btn.light-blue{ background: rgb(79, 149, 228) ; color: #ffffff; margin: 0; margin-top: 20px;}
+
+</style>
+
+</head>
+
+<body>
+    <div class="container col-sm-12 col-md-5">
+
+        <div class="row parent align-items-center">
+            <div class="col-12 outer-wrapper">
+                <div class="row">
+                    <div class="col-12 small-title"><p>Login to site.com</p></div>
+                    <div class="col-12 separator"><hr></div>
+                         
+                </div>
+                <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="inputEmail" class="col-12 control-label bold">Username</label>
+                                    </label>
+                                    <div class="col-12">
+                                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword" class="col-12 control-label bold">Password</label>
+                                    <div class="col-12">
+                                        <input type="password" class="form-control" id="inputPassword">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-12 checkbox">
+                                        <div class="col-1 remember-login custom-control-inline">
+                                                <input type="checkbox">
+                                        </div>
+                                        <div class="col-8 remember-login custom-control-inline">
+                                                <label>Remember login</label>
+                                        </div>
+                                        <div class="col-12 comment">
+                                                <p>(if this is a private computer)</p>
+                                        </div>
+                                            
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-12">
+                                        <button type="submit" class="btn green">Sign in</button>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn white">Help to login</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="register-wrapper">
+                                <div class="big-title">Register now for <span class="green">FREE</span></div>
+                               
+                                <ul class="signup-advantages">
+                                    <li> <i class="fas fa-check"></i> See all your orders</li>
+                                    <li> <i class="fas fa-check"></i> Fast re-order</li>
+                                    <li> <i class="fas fa-check"></i> Save your favorite</li>
+                                    <li> <i class="fas fa-check"></i> Fast checkout</li>
+                                    <li> <i class="fas fa-check"></i> Get a gift <span class="comment">(only new customers)<span></li>
+                                </ul>
+                                <div><a class="read-more" href="#">Read more</a></div>
+                           
+                                <div class="col-12 button-wrapper">
+                                    <button class="btn light-blue col-12">Yes, please register now!</button>
+                                </div>
+                            </div>
+                        </div>
+                 </div>
+                 <div class="closing-x">x</div>       
+             </div>
+        </div>
+     
+    </div>
+
+</body>
+</html>

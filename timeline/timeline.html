@@ -1,0 +1,138 @@
+<html>
+<head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+</head>
+<title>Timeline</title>
+<style>
+
+     body { background-color: grey }
+    .row, .col-6{ margin:0; padding:0  }
+    .timeline{
+        width: 100%;
+        height: 100%;
+        background-color: grey
+    }
+    .timeline::after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        background-color: #000000;
+        height: 100%;
+        width: 2px;
+    }
+    
+    .row.lefties{ padding-right: 30px; }
+    .box.left{  padding-right: 15px }
+    .box.right{ padding-left: 55px }
+    .box.top{ padding-top: 50px; }
+    .text{ background-color: rgb(255, 255, 255); padding: 10px; font-size: 14px; border-radius: 5px; }
+    
+    .box.left .first-peak::before  { content:" "; width: 0;    position: absolute; top: 10px; right: -5px; border-left: solid 30px #ffffff; border-bottom: solid 30px transparent; transform: rotate( 133deg); }
+    .box.left .first-peak::after   { content:" "; width: 40px; top: 0; right: -65px; z-index: 100; height: 40px; position: absolute;  background: url("icons/alarm-clock.png"); background-size: 40px 40px; background-repeat: no-repeat;  }
+    
+    .box.right .second-peak::before{ content:" "; width: 0;    position: absolute; top: 20px; left: -10px; border-left: solid 30px #ffffff; border-bottom: solid 30px transparent; transform: rotate( -45deg);  }
+    .box.right .second-peak::after { content:" "; width: 40px; top: 15px; left: -75px; z-index: 100; height: 40px; position: absolute;  background: url("icons/brainstorm.png"); background-size: 40px 40px; background-repeat: no-repeat;  }
+    
+    .box.left .third-peak::before  { content:" "; width: 0;    position: absolute; top: 10px; right: -5px; border-left: solid 30px #ffffff; border-bottom: solid 30px transparent; transform: rotate( 133deg); }
+    .box.left .third-peak::after   { content:" "; width: 40px; top: 0; right: -65px; z-index: 100; height: 40px; position: absolute;  background: url("icons/calculation.png"); background-size: 40px 40px; background-repeat: no-repeat;  }
+    
+    .box.right .fourth-peak::before{ content:" "; width: 0;    position: absolute; top: 20px; left: -10px; border-left: solid 30px #ffffff; border-bottom: solid 30px transparent; transform: rotate( -45deg);  }
+    .box.right .fourth-peak::after { content:" "; width: 40px; top: 15px; left: -75px; z-index: 100; height: 40px; position: absolute;  background: url("icons/biology.png"); background-size: 40px 40px; background-repeat: no-repeat;  }
+  
+    @media only screen and (max-width: 1220px){ .container{ width: 100%; }}
+    @media only screen and (max-width: 568px){
+        /*.container{ background-color: rgb(160, 15, 153) }*/
+        .timeline::after{ left: 5% }
+        .row{ margin-bottom: 30px; }
+        .box{ padding-left: 60px;  }
+        .box.left  .peak::before { content:" "; width: 0;    position: absolute; top: 15px; left: -8px; transform: rotate( -45deg); }
+        .box.left  .peak::after  { content:" "; width: 40px; position: absolute; top: 5px;  }
+        .box.left  .peak::after  { content:" "; width: 40px; top: 10px; left: -70px; z-index: 100; height: 40px; position: absolute; }
+        .box.right .peak::after{ content:" "; width: 40px; top: 15px; left: -70px; z-index: 100; height: 40px; position: absolute; }
+        .hide-mobile{ display: none; }
+        
+        
+    }
+
+</style>
+
+    <body>
+        <div class="container">
+
+            <div class="row timeline">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 box left top">
+                        <div class="row lefties justify-content-end">
+                            
+                            <div class="col-sm-10 col-md-6 text first-peak peak">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it
+                                to make a type specimen book. It has survived not only five centuries, 
+                            </div>
+                            
+                        </div>
+                    
+                    </div>
+                    <div class="col-sm-6 col-md-6 right hide-mobile">
+                            <div class="row"></div>      
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 left hide-mobile">
+                            <div class="row"></div>     
+                    </div>
+                    <div class="col-sm-6 col-md-6 box right">
+                        <div class="row righties">
+                            <div class="col-sm-10 col-md-11 text second-peak peak">
+                                Why do we use it?
+                                It is a long established fact that a reader will be distracted
+                                    by the readable content of a page when looking at its layout.
+                                The point of using Lorem Ipsum is that it has a more-or-less normal 
+                                distribution of letters, as opposed to using 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-sm-6 col-md-6 box left top">
+                            <div class="row lefties justify-content-end">
+                                
+                                <div class="col-sm-10 col-md-6 text third-peak peak">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                    when an unknown printer took a galley of type and scrambled it
+                                    to make a type specimen book. It has survived not only five centuries, 
+                                </div>
+                                
+                            </div>
+                        
+                        </div>
+                        <div class="col-sm-6 col-md-6 right hide-mobile">
+                                <div class="row"></div>      
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-sm-6 col-md-6 left hide-mobile">
+                                <div class="row"></div>     
+                        </div>
+                        <div class="col-sm-6 col-md-6 box right">
+                            <div class="row righties">
+                                <div class="col-sm-10 col-md-11 text fourth-peak peak">
+                                    Why do we use it?
+                                    It is a long established fact that a reader will be distracted
+                                        by the readable content of a page when looking at its layout.
+                                    The point of using Lorem Ipsum is that it has a more-or-less normal 
+                                    distribution of letters, as opposed to using 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
