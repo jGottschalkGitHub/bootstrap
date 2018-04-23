@@ -1,0 +1,92 @@
+<html>
+<head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+</head>
+<title>Timeline</title>
+<style>
+
+     
+    .row, .col-6, .col-sm-12, .col-md-4, .col-md-8, .col-md-3{ margin:0; padding:0  }
+    .container{ height: 100% }
+    .payment-wrapper{ background-color: rgb(219, 215, 215); padding: 20px; }
+    .payment-wrapper a{ color: rgb(80, 131, 241)!important }
+    .payment-wrapper .card-details{ font-size: 12px; }
+    .payment-wrapper .card-details .col-md-3{ padding-right: 10px }
+    .payment-wrapper .card-details img{ position: relative; top: 21px }
+    .payment-wrapper .form-check{ margin-top: 20px; margin-bottom: 20px }
+    .payment-wrapper input#card_holder{ margin-top: 15px; margin-bottom: 15px; }
+    .payment-wrapper button.pay{ width: 100%; background-color: rgb(211, 27, 27) }
+    .payment-wrapper button.cancel{ background-color: rgb(247, 160, 30) }
+    .payment-wrapper button{ border: none!important }
+    .payment-wrapper input{ border: solid 1px rgb(192, 191, 191)}
+ 
+  @media only screen and (max-width: 900px){ 
+      
+      .card-details{ font-size: 9px }
+     
+    }
+
+    @media only screen and (max-width: 768px){ 
+      .container{ width: 100%; } 
+      .payment-wrapper input{ margin-bottom: 20px}
+      .payment-wrapper .card-details{ font-size: 14px }
+      .payment-wrapper .card-details img{ top: 0 } 
+      .payment-wrapper button.cancel{ width: 100% }
+      .payment-wrapper button{ margin-top: 5px; margin-bottom: 5px }
+      .payment-wrapper label{ font-size: 14ox }
+    }
+
+
+</style>
+
+  <body>
+    <div class="container d-flex h-100 align-items-center">
+      <div class="col-md-12">
+        <div class="row justify-content-center">
+          <div class="payment-wrapper rounded col-md-5">
+            <form>
+              <div class="form-group">
+                  <label for="card_number"></label>
+                  <input type="text" class="form-control" id="card_number" placeholder="Enter Card Number">
+              </div>
+              <div class="form-group row card-details">
+                <div class="col-md-3">
+                  <label for="expiry_month">Expiry month</label>
+                  <input type="text" class="form-control" id="expiry_month" placeholder="MM">
+                </div>
+                <div class="col-md-3">
+                    <label for="expiry_year">Expiry year</label>
+                    <input type="text" class="form-control" id="expiry_year" placeholder="YY">
+                </div>
+                <div class="col-md-3">
+                    <label for="ccv_number">CCV</label>
+                    <input type="text" class="form-control" id="ccv_number" placeholder="CCV">
+                </div>
+                <div class="col-md-3">
+                  <img src="icons/credit-card.png" width="40">
+                </div>
+              </div>
+              <div class="form-group">
+                  <input type="text" class="form-control" id="card_holder" placeholder="Name On The Card">
+              </div>
+              <div class="form-check">
+                <input type="checkbox" id="allow_save_date" class="form-check-input">
+                <label class="form-check-label" for="allow_save_date">Save details for past payments <a>learn how?</a></label>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><button type="submit" class="btn btn-primary cancel">CANCEL</button></div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"><button type="submit" class="btn btn-primary pay">PAY NOW</button></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+        <p>Credits for icons: Icon made by Freepik from www.flaticon.com </p>
+    </div>
+  </body>
+</html>
