@@ -1,0 +1,140 @@
+<html>
+  <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  </head>
+  <title>Plans and Prices</title>
+  <style> 
+    p{ -webkit-margin-before: 0;
+       -webkit-margin-after: 0;
+       -webkit-margin-start: 0;
+       -webkit-margin-end: 0;
+       -webkit-padding-start: 0; }
+    .plan-wrapper{ margin: auto }
+    .row, .col-6, .col-sm-12, .col-md-4, .col-md-8, .col-md-3{ margin:0; padding:0  }
+    .col-md-3{ padding: 15px }
+    p.pro-plan { text-align: center; background-color: #BF1D38; border-top: solid 4px rgb(133, 23, 23); color: #ffffff; font-size: 18px; }
+    p.proplan-price {background-color: rgb(228, 30, 63); color: #ffffff; font-size: 28px; padding-top: 10px; padding-bottom: 30px;}
+    p.pro-plan.blue { background-color: rgb(58, 87, 168); border-top: solid 4px rgb(44, 70, 139);}
+    p.proplan-price.blue {background-color:  rgb(84, 112, 189); }
+    p.pro-plan.green { background-color: rgb(47, 109, 57); border-top: solid 4px rgb(40, 87, 40);}
+    p.proplan-price.green {background-color:  rgb(60, 134, 67); }
+    p.pro-plan.black { background-color: rgb(72, 72, 73); border-top: solid 4px rgb(40, 40, 41);}
+    p.proplan-price.black {background-color:  rgb(111, 113, 116); }
+    p.free-plan { padding-top: 15px; padding-bottom: 15px; text-align: center; background-color: rgb(244, 239, 239); border-top: solid 4px rgb(199, 198, 198);font-size: 18px; color: #3a3838}
+    p.freeplan-price {background-color: rgb(204, 200, 200); color: #ffffff; font-size: 28px; padding-top: 10px; padding-bottom: 30px;}
+    button.pro-plan{  color: #ffffff; width: 100%; background-color: rgb(228, 30, 63)}
+    button.pro-plan.blue{  color: #ffffff; width: 100%; background-color: rgb(30, 155, 228)}
+    button.pro-plan.green{  color: #ffffff; width: 100%; background-color: rgb(33, 146, 52)}
+    button.pro-plan.black{  color: #ffffff; width: 100%; background-color: rgb(111, 114, 111)}
+    button.free-plan{ color: rgb(73, 71, 72); width: 100%; background-color: #ffffff }
+    .fa-check.red{ color: #BF1D38; margin-right: 2px;  }
+    .fa-check.green{ color: rgb(29, 191, 37); margin-right: 2px; }
+    hr{ margin-top: 0; margin-bottom: 0;}
+    div,p{ text-align:center }
+    ul{ margin: 0}
+    li{ padding-top: 7px; padding-bottom: 7px; font-size: 14px; font-weight: bold; }
+    .bordertop{ border-top: solid 3px rgb(187, 183, 183) }
+    .button-pro-wrapper{ padding: 8px; background-color: rgb(223, 219, 219); border-bottom: solid 3px rgb(177, 174, 174);  margin-bottom: 20px; }
+    .button-free-wrapper{ padding: 8px; background-color: rgb(223, 219, 223); border-bottom: solid 1px rgb(177, 174, 174); }
+  </style>
+  
+  <body>
+    <div class="container d-flex h-100 align-items-center">
+      <div class="plan-wrapper col-md-12">
+        <div class="row">
+          <div class="col-md-3">
+            <div><p class="text-uppercase pro-plan p-3">pro plan</p></div>
+            <div><p class="proplan-price p-6">$10/month</p></div>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check red"></i>Personal use</li>
+              <hr>
+              <li><i class="fas fa-check red"></i>Unlimited project</li>
+              <hr>
+              <li class="list"><i class="fas fa-check red"></i>27/7 support</li>
+            </ul>
+            <div class="button-pro-wrapper"><button class="btn pro-plan text-uppercase">buy now!</button></div>
+            <div><p class="text-uppercase bordertop free-plan">free plan</p></div>
+            <div><p class="text-uppercase freeplan-price">$0 / month</p></div>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check green"></i>Personal use</li>
+              <hr>
+              <li><i class="fas fa-check green"></i>Unlimited projects</li>
+              <hr>
+              <li><i class="fas fa-check green"></i>27/7 support</li>
+            </ul>
+            <div class="button-free-wrapper"><button class="btn text-uppercase free-plan">buy now!</button></div>
+          </div>
+          <div class="col-md-3">
+              <div><p class="text-uppercase pro-plan blue p-3">pro plan</p></div>
+              <div><p class="proplan-price blue p-6">$10/month</p></div>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check red"></i>Personal use</li>
+                <hr>
+                <li><i class="fas fa-check red"></i>Unlimited project</li>
+                <hr>
+                <li class="list"><i class="fas fa-check red"></i>27/7 support</li>
+              </ul>
+              <div class="button-pro-wrapper"><button class="btn pro-plan blue text-uppercase">buy now!</button></div>
+              <div><p class="text-uppercase bordertop free-plan">free plan</p></div>
+              <div><p class="text-uppercase freeplan-price">$0 / month</p></div>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check green"></i>Personal use</li>
+                <hr>
+                <li><i class="fas fa-check green"></i>Unlimited projects</li>
+                <hr>
+                <li><i class="fas fa-check green"></i>27/7 support</li>
+              </ul>
+              <div class="button-free-wrapper"><button class="btn text-uppercase free-plan">buy now!</button></div>
+            </div>  
+            <div class="col-md-3">
+                <div><p class="text-uppercase pro-plan green p-3">pro plan</p></div>
+                <div><p class="proplan-price green p-6">$10/month</p></div>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-check red"></i>Personal use</li>
+                  <hr>
+                  <li><i class="fas fa-check red"></i>Unlimited project</li>
+                  <hr>
+                  <li class="list"><i class="fas fa-check red"></i>27/7 support</li>
+                </ul>
+                <div class="button-pro-wrapper"><button class="btn pro-plan green text-uppercase">buy now!</button></div>
+                <div><p class="text-uppercase bordertop free-plan">free plan</p></div>
+                <div><p class="text-uppercase freeplan-price">$0 / month</p></div>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-check green"></i>Personal use</li>
+                  <hr>
+                  <li><i class="fas fa-check green"></i>Unlimited projects</li>
+                  <hr>
+                  <li><i class="fas fa-check green"></i>27/7 support</li>
+                </ul>
+                <div class="button-free-wrapper"><button class="btn text-uppercase free-plan">buy now!</button></div>
+              </div>  
+              <div class="col-md-3">
+                  <div><p class="text-uppercase pro-plan black p-3">pro plan</p></div>
+                  <div><p class="proplan-price black p-6">$10/month</p></div>
+                  <ul class="list-unstyled">
+                    <li><i class="fas fa-check red"></i>Personal use</li>
+                    <hr>
+                    <li><i class="fas fa-check red"></i>Unlimited project</li>
+                    <hr>
+                    <li class="list"><i class="fas fa-check red"></i>27/7 support</li>
+                  </ul>
+                  <div class="button-pro-wrapper"><button class="btn pro-plan black text-uppercase">buy now!</button></div>
+                  <div><p class="text-uppercase bordertop free-plan">free plan</p></div>
+                  <div><p class="text-uppercase freeplan-price">$0 / month</p></div>
+                  <ul class="list-unstyled">
+                    <li><i class="fas fa-check green"></i>Personal use</li>
+                    <hr>
+                    <li><i class="fas fa-check green"></i>Unlimited projects</li>
+                    <hr>
+                    <li><i class="fas fa-check green"></i>27/7 support</li>
+                  </ul>
+                  <div class="button-free-wrapper"><button class="btn text-uppercase free-plan">buy now!</button></div>
+                </div>          
+        </div>
+      </div> 
+    </div>
+  </body>
+</html>
+  
